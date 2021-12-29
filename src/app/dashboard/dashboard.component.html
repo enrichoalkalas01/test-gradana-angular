@@ -1,0 +1,14 @@
+<div style="padding: 2.5% 5%;">
+    <table class="table table-striped" id="history-data">
+        <tr>
+            <td>No.</td>
+            <td>Saldo</td>
+            <td>Tgl Top Up</td>
+        </tr>
+        <tr *ngFor="let item of state.datahistory; index as i">
+            <td>{{ i + 1 }}.</td>
+            <td>{{ item.saldo }}</td>
+            <td>{{ item.tgl_topup }}</td>
+        </tr>
+    </table>
+</div>
